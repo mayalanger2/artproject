@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+/*UNIVERSAL*/
+body {
+  color: white;
+}
+.navbar {
+  z-index: 1;
+  background-color: black;
+}
+.drip-dec {
+  background-image: url("resources/driptrans.png");
+  width: 100%;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*SINGLE COLUMN LAYOUT*/
+* {
+  box-sizing: border-box;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-sizer, .grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer, .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer, .grid-item {
+    width: 50%;
+  }
+}
+/* To change the amount of columns on larger devices, uncomment the code below */
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer, .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer, .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer, .grid-item {
+    width: 20%;
+  }
+}
+.grid-item {
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+/*END OF GRID*/
+.front-img
+{
+    height: 20em;
+    width: 100%;
+    object-fit: cover;
+    border-style: solid 10px black;
+}
+.carousel-item:before {
+  -webkit-box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.form-control {
+  background-color: black;
+  border-radius: 16em;
+}
+#content-single {
+  background-color: #191715;
+  box-shadow: inset 0em 80em 10em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0em 80em 10em rgba(0, 0, 0, 0.8);
+}
+#about-jumbo {
+  margin-bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url("resources/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 48em;
+}
+.carousel-inner {
+  width: 100%;
+  max-height: 30em !important;
+}
+.carousel-content, .carousel-content-2 {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 5em;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-content-2 {
+  margin-top: 9em;
+}
+#jumbo-head, #jumbo-description {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+#description-about {
+  background-color: #1F1F1F;
+  padding: 5em;
+  padding-bottom: 8em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+.description-text-header {
+  color: white;
+  font-weight: bold;
+}
+.description-text {
+  color: white;
+}
+#pic1-about, #pic2-about, #pic3-about {
+  border-radius: 50%;
+  height: 20em;
+  width: 20em;
+  background-size: cover;
+  border: 20px solid white;
+  border-style: double;
+  box-shadow: 0 0 0 20px #1F1F1F;
+  margin: auto;
+  margin-bottom: 3em;
+  margin-top: -5em;
+}
+@media only screen and (max-width: 992px) {
+  #pic2-about, #pic3-about {
+    display: none;
+  }
+}
+#pic1-about {
+  background-image: url("resources/heart-oragami.jpg");
+  z-index: 2;
+}
+#pic2-about {
+  background-image: url("resources/mask-making.jpg");
+  z-index: 1;
+}
+#pic3-about {
+  background-image: url("resources/art-supplies.jpg");
+  z-index: 0;
+}
+/*END OF SINGLE COLUMN LAYOUT*/
+/*EQUAL COLUMN LAYOUT*/
+#left-col {
+  background-color: #1F1F1F;
+  box-shadow: inset 0em 10em 10em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0em 10em 10em rgba(0, 0, 0, 0.5);
+    padding-bottom: 0px;
+}
+/**
+#right-col {
+  position: relative;
+}**/
+#by, .artwork-student {
+  padding: -10px;
+  display: inline-block;
+}
+.artwork-text {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.artwork {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*END OF EQUAL COLUMN LAYOUT*/
+/*UNEQUAL COLUMN LAYOUT*/
+#full-col {
+  background-color: #1F1F1F;
+  padding: 1em;
+overflow-x: hidden;
+}
+#left-col-small {
+  box-shadow: inset 0em 10em 10em rgba(0, 0, 0, 1);
+  -webkit-box-shadow: inset 0em 10em 10em rgba(0, 0, 0, 1);
+  background-color: #292929;
+padding: 0px;
+  padding-bottom: 5em;
+  z-index: 2;
+overflow-x: hidden;
+}
+#right-col-large {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: inset 0em 3em 3em rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.featured-title, .featured-description {
+  margin-left: 15%;
+  margin-right: 15%;
+  word-wrap: break-word;
+}
+#pic-featured {
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background-image: url("resources/i-LDBWRv2-XL.jpg");
+  background-size: cover;
+  border: 5px solid #292929;
+  box-shadow: 0 0 0 2px white;
+}
+@media only screen and (max-width: 768px) {
+  #left-col-small {
+    padding-bottom: 5em;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  #right-col-large {
+    -webkit-box-shadow: 0 0 0;
+  }
+}
+/*END OF UNEQUAL COLUMN LAYOUT*/

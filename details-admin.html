@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/equal-columnn.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>details</title>
+<!-- InstanceEndEditable -->
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="basic.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<link href = "back-end.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<!--HEADER FOR DOUBLE COLUMN PAGE--->
+<div id = "head" class="col-lg-12">
+  <header>
+    <nav class="navbar"> <!-- InstanceBeginEditable name="page-logo" --> <!-- InstanceEndEditable -->
+      <button type="button" class="btn btn-outline-light" id = "back-btn">BACK TO GALLERY</button>
+    </nav>
+  </header>
+</div>
+<!--END OF HEADER FOR DOUBLE COLUMN PAGE--> 
+
+<!--LAYOUT FOR EQUAL COLUMN PAGE-->
+<div id = "equal-col" class="container-fluid">
+  <div class="row"> 
+    
+    <!--LEFT-COLUMN-->
+    <div id = "left-col" class="col-lg-6"> <!-- InstanceBeginEditable name="page-left" -->
+      <div class = "slant">
+        <div class = "artwork-text">
+          <h2 class = "review-page">Review Submission</h2>
+          <hr class = "details-divider">
+          <h1 class = "artwork-title">Artwork Title</h1>
+          <p id = "by">by</p>
+          <h3 class = "artwork-student">Student Name</h3>
+          <h3 class = "artwork-teacher">Teacher Name</h3>
+          <h3 class = "artwork-grade">Grade</h3>
+          <p id = "tags">Tags: </p>
+          <h3 class = "artwork-tags">Artwork Tags</h3>
+          <div class="form-group">
+            <p>Add to Gallery:</p>
+            <select class="form-control" id="artwork-gallery">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <input type="checkbox" class="form-check-input" id="slides-decision">
+          <label class="form-check-label" for="exampleCheck1">Will this submission be apart of the Front Page Slides?</label>
+          <hr class = "details-divider">
+      
+          <p>Approve this submission?</p>
+          <input type="image" class = "decision-btn" src="resources/approve.png" border="0" alt="Submit" />
+          <input type="image"  class = "decision-btn" src="resources/disapprove.png" border="0" alt="Submit" />
+          <input type="image"  class = "decision-btn" src="resources/undecided.png" border="0" alt="Submit" />
+        </div>
+      </div>
+      <!-- InstanceEndEditable --> </div>
+    <!--END-OF-LEFT-COL--> 
+    
+    <!--RIGHT-COLUMN-->
+    <div id = "right-col" class="col-lg-6"> <!-- InstanceBeginEditable name="page-right" --> <img class = "artwork" src="resources/Bal du moulin de la Galette.jpg" alt=""/> <!-- InstanceEndEditable --> </div>
+    <!--END-OF-RIGHT-COL--> 
+    
+  </div>
+</div>
+<!--END OF LAYOUT FOR EQUAL COLUMN PAGE--> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+<!-- InstanceEnd -->
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>manage-galleries</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="basic.css" rel="stylesheet" type="text/css">
+<link href="back-end.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="page-links" -->page-links<!-- TemplateEndEditable -->
+</head>
+<body>
+
+
+<!--HEADER FOR MANAGE SINGLE COLUMN PAGE--->
+<div id = "head" class="col-lg-12">
+  <header>
+    <nav class="navbar">
+      <button type="button" class="btn btn-outline-light" id = "back-btn">BACK TO GALLERY</button>
+    </nav>
+  </header>
+</div>
+<!--END OF HEADER FOR MANAGE SINGLE COLUMN COLUMN PAGE-->
+<!-- TemplateBeginEditable name="page-galleries" -->
+<div class="container-fluid" id = "manage-choice">
+  <h1 id = "manage-label" class = "d-flex justify-content-center">Select Galleries to Manage</h1>
+  <div class="row">
+    
+    <div class="col-4"><a href="#" id = "select-front-btn" class="btn btn-secondary" role="button" aria-pressed="true">Front Page</a> </div>
+         
+    <div class="col-4"><a href="#" id = "featured-galleries-btn" class="btn btn-secondary" role="button" aria-pressed="true">Featured Galleries</a> </div>
+    <div class="col-4"><a href="#" id = "all-galleries-btn" class="btn btn-secondary" role="button" aria-pressed="true">All Galleries</a> </div>
+         
+  </div>
+</div>
+<div class="container-fluid" id = "manage-gallery"> \page-galleries<!-- TemplateEndEditable -->
+    
+  
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

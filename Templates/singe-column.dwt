@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>index</title>
+<!-- TemplateEndEditable -->
+<!-- Bootstrap -->
+<link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="../basic.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<!--HEADER FOR SINGLE COLUMN PAGE--->
+<div id = "head" class="col-lg-12">
+  <header>
+    <nav class="navbar"> <a class="navbar-brand" href="https://www.lps.org/"> <img src="../resources/Small LPS Logo.png" width = "39" height = "30" class="d-inline-block align-top" alt=""> LPS Gallery </a>
+        
+        
+      <cfset filePath = "GetCurrentTemplatePath()">
+      </cfset>
+    <cfoutput>#filePath#</cfoutput>
+      <cfset fileName = "GetFileInfo(filepath).name">
+      </cfset>
+      
+      <!--CONIDITIONAL START-->
+      <cfif fileName = "index">
+        <!--SEARCH-->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light my-2 my-sm-0" id = "submit-btn" type="submit">Search</button>
+        </form>
+        <cfelse>
+        <!--NON SEARCH-->
+        <button type="button" class="btn btn-outline-light" id = "back-btn">BACK TO GALLERY</button>
+        </cfelse>
+      </cfif>
+      <!---END OF CONIDITIONAL---> 
+      
+    </nav>
+  </header>
+</div>
+<!--END OF HEADER FOR SINGLE COLUMN PAGE--> 
+
+<!--START OF SINGLE COLUMN CONTENT--->
+<div id="content-single" class="col-lg-12"> <!-- TemplateBeginEditable name="page-content" --><!-- TemplateEndEditable --> </div>
+<!--END OF SINGLE COLUMN CONTENT---> 
+
+<!--FOOTER-->
+<div id="footer-single" class="col-lg-12">
+  <footer>
+    <div id= "footer-black"> <img id="footer-logo" src= "../resources/Full LPS Logo.png"> <small id="footer-text">Learn more about Art Education at Lincoln Public Schools</small> </div>
+  </footer>
+</div>
+<!--END OF FOOTER--> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="file:///Macintosh HD/Users/mlanger2/Desktop/js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="file:///Macintosh HD/Users/mlanger2/Desktop/js/popper.min.js"></script> 
+<script src="file:///Macintosh HD/Users/mlanger2/Desktop/js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
